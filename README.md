@@ -19,7 +19,7 @@ Because LDA is supervised, it projects the data onto axes that best separate the
 Small γ (0.01):
 The kernel function becomes very broad. All points look similar in terms of distance, so the transformation does not separate the classes well. The result is underfitting, and the half-moons remain not linearly separable after projection.
 
-Large γ (e.g., 100):
+Large γ (100):
 The kernel becomes very narrow, focusing too much on individual points. This leads to highly complex transformations where each point is separated almost uniquely. The data may become noisy and lose general structure (overfitting).
 
 ## 4. Classifier Performance: Apply a classifier (e.g., SVM or Logistic Regression) to the original data, the PCA-transformed data, and the LDA-transformed Wine data. Measure and compare the accuracy and computation time. What do you observe?
